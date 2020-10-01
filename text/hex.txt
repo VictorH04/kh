@@ -1,0 +1,17 @@
+lightblue1: #9bc6da
+ligblue2: #5aa5d4
+
+darkblue1: #5e91b4
+darkblue2: #467e95
+
+coral: #f47d3b
+coral2: #ee6a50
+peach: #f69785
+
+winered-dark: #4f0415
+winered-light: #a11d24
+
+lightpink: #e3afbb
+
+yellow: #f7c72c
+green: #85c442
