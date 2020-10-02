@@ -11,42 +11,41 @@ let counter = 0;
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
-
 function nextSlide() {
-    container.animate([ {opacity: '.1'}, {opacity: '1'}], {duration: 250, fill: 'forwards'});
-    
-    if (counter === 2) {
-        counter = -1;
-    }
-    
-    counter++;
-    
-    container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
-    console.log(counter);
+	container.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+
+	if (counter === 2) {
+		counter = -1;
+	}
+
+	counter++;
+
+	container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
+	console.log(counter);
 }
 
-function prevSlide () {
-    container.animate([ {opacity: '.1'}, {opacity: '1'}], {duration: 250, fill: 'forwards'});
-    
-    if (counter === 0) {
-        counter = 3;
-    }
-    
-    counter--;
-    
-    container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
-    console.log(counter);
+function prevSlide() {
+	container.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+
+	if (counter === 0) {
+		counter = 3;
+	}
+
+	counter--;
+
+	container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
+	console.log(counter);
 }
 
 let autoslide = setInterval(nextSlide, 4000);
 
 // Navbar
 const navbarIcon = document.querySelector('.navbar-icon');
+navbarIcon.classList.remove('active');
 
 function toggleNav() {
-    navbarIcon.classList.toggle('.active');
-    console.log('clicked');
+	navbarIcon.classList.toggle('active');
+	console.log('clicked');
 }
 
 navbarIcon.addEventListener('click', toggleNav);
-
