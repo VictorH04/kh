@@ -68,14 +68,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  position: fixed;
-  background-color: #fff;
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%; }
+  background-color: var(--darkblue1);
+  width: 100%;
+  z-index: 999999;
+  padding: 2.5rem 0rem; }
   .navbar-icon {
     display: grid;
     place-items: center;
@@ -111,6 +107,10 @@ body {
     .navbar-icon--line3 {
       margin-top: 1.5rem; }
 
+.sticky {
+  position: sticky;
+  top: 0; }
+
 .landing {
   height: 100vh; }
   .landing-landingplace {
@@ -131,6 +131,9 @@ body {
       align-self: center;
       height: 20rem;
       filter: brightness(100%); }
+      @media screen and (max-width: 56.25em) {
+        .landing-landingplace--logo {
+          height: 10rem; } }
   .landing-slideshow {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -156,15 +159,21 @@ body {
 .folgmed {
   height: 120vh;
   background-color: var(--lightblue1); }
+  @media screen and (max-width: 56.25em) {
+    .folgmed {
+      height: 200vh; } }
   .folgmed-title {
     font-size: var(--fs-heading-big);
     font-weight: 300;
     padding: var(--title-padding); }
     .folgmed-title--underline {
       border-bottom: var(--border-bottom-2); }
+    @media screen and (max-width: 56.25em) {
+      .folgmed-title {
+        text-align: center; } }
   @media screen and (max-width: 56.25em) {
     .folgmed-fb-feed {
-      justify-self: start; } }
+      justify-self: center; } }
   .folgmed-instafeed {
     display: flex;
     flex-direction: row;
@@ -172,7 +181,7 @@ body {
     @media screen and (max-width: 56.25em) {
       .folgmed-instafeed {
         margin-left: 5rem;
-        justify-self: start; } }
+        justify-self: center; } }
   .folgmed-wrapper {
     margin-top: 5rem;
     display: grid;
@@ -216,6 +225,12 @@ body {
   grid-template-rows: 1fr;
   grid-gap: 3rem;
   background-color: var(--darkblue1); }
+  @media screen and (max-width: 56.25em) {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      width: 100vw; } }
   .footer-logo {
     height: 10rem;
     width: 10rem;
@@ -223,11 +238,21 @@ body {
     grid-row: 1 / 1;
     align-self: start;
     margin: .5rem 1rem; }
+    @media screen and (max-width: 56.25em) {
+      .footer-logo {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        align-self: start; } }
   .footer-social {
     align-self: center;
     justify-self: center;
     grid-column: 10 / 10;
     grid-row: 1 / 1; }
+    @media screen and (max-width: 56.25em) {
+      .footer-social {
+        justify-self: center;
+        grid-column: 1 / 1;
+        grid-row: 2 / 2; } }
     .footer-social-img {
       fill: #fff;
       height: 4rem; }
@@ -248,6 +273,11 @@ body {
     justify-self: center;
     grid-column: 9 / 9;
     grid-row: 1 / 1; }
+    @media screen and (max-width: 56.25em) {
+      .footer-socialface {
+        justify-self: center;
+        grid-column: 2 / 2;
+        grid-row: 2 / 2; } }
     .footer-socialface-img {
       fill: #fff;
       height: 4rem; }
@@ -268,6 +298,11 @@ body {
     justify-self: center;
     grid-column: 8 / 8;
     grid-row: 1 / 1; }
+    @media screen and (max-width: 56.25em) {
+      .footer-socialsmak {
+        justify-self: center;
+        grid-column: 3 / 3;
+        grid-row: 2 / 2; } }
     .footer-socialsmak-img {
       fill: #fff;
       height: 6rem; }
@@ -288,6 +323,11 @@ body {
     justify-self: center;
     grid-column: 7 / 7;
     grid-row: 1 / 1; }
+    @media screen and (max-width: 56.25em) {
+      .footer-socialmail {
+        justify-self: center;
+        grid-column: 4 / 4;
+        grid-row: 2 / 2; } }
     .footer-socialmail-img {
       fill: #fff;
       height: 4rem; }

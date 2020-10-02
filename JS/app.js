@@ -49,3 +49,21 @@ function toggleNav() {
 }
 
 navbarIcon.addEventListener('click', toggleNav);
+
+window.onscroll = function() {
+	scrollFunc();
+};
+
+let navbar = document.querySelector('.navbar');
+
+let sticky = navbar.offsetTop;
+
+console.log(sticky);
+
+function scrollFunc() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add('sticky');
+	} else {
+		navbar.classList.remove('sticky');
+	}
+}
