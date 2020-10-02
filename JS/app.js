@@ -41,15 +41,21 @@ let autoslide = setInterval(nextSlide, 4000);
 
 // Navbar
 const navbarIcon = document.querySelector('.navbar-icon');
+const navContent = document.querySelector('.navcontent');
+
 navbarIcon.classList.remove('active');
+navContent.classList.add('display');
 
 function toggleNav() {
 	navbarIcon.classList.toggle('active');
+	navContent.classList.toggle('display');
+
 	console.log('clicked');
 }
 
 navbarIcon.addEventListener('click', toggleNav);
 
+// Navbar sticky
 window.onscroll = function() {
 	scrollFunc();
 };

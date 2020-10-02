@@ -1,7 +1,7 @@
 /* ===== Universal Things ===== */
 :root {
   --lightblue1: #9bc6da;
-  --ligblue2: #5aa5d4;
+  --ligthblue2: #5aa5d4;
   --darkblue1: #5e91b4;
   --darkblue2: #467e95;
   --coral: #f47d3b;
@@ -24,6 +24,7 @@
   --border-bottom-5: .5rem solid #ffd300;
   --border-bottom-6: .2rem solid #40437c;
   --border-bottom-7: .5rem solid #fff;
+  --border-bottom-8: .5rem solid #5e91b4;
   --border-1: .5rem solid #48ABC7;
   --border-2: .5rem solid #fff;
   --title-margin: 5rem;
@@ -110,6 +111,161 @@ body {
 .sticky {
   position: sticky;
   top: 0; }
+
+.display {
+  display: none; }
+
+.display:active {
+  transition: all .5s ease-out; }
+
+.navcontent {
+  background-color: var(--coral2);
+  height: 100vh;
+  width: 100vw; }
+  .navcontent-ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    list-style-type: none;
+    text-decoration: none;
+    height: 100%;
+    place-items: start;
+    color: #000; }
+    .navcontent-ul--hjem {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+      margin: 10rem 0rem 0rem 10rem; }
+      .navcontent-ul--hjem_hjem {
+        color: #000;
+        text-decoration: none; }
+        .navcontent-ul--hjem_hjem--title {
+          font-size: var(--fs-heading); }
+          .navcontent-ul--hjem_hjem--title-underline {
+            border-bottom: var(--border-bottom-8); }
+    .navcontent-ul--nyheter {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+      margin: 10rem 0rem 0rem 10rem; }
+      .navcontent-ul--nyheter_nyheter {
+        color: #000;
+        text-decoration: none; }
+        .navcontent-ul--nyheter_nyheter--title {
+          font-size: var(--fs-heading); }
+          .navcontent-ul--nyheter_nyheter--title-underline {
+            border-bottom: var(--border-bottom-8); }
+    .navcontent-ul--nettbutikk {
+      grid-column: 3 / 3;
+      grid-row: 1 / 1;
+      margin: 10rem 0rem 0rem 10rem; }
+      .navcontent-ul--nettbutikk_nettbutikk--title {
+        font-size: var(--fs-heading); }
+    .navcontent-ul--produkter {
+      grid-column: 1 / 1;
+      grid-row: 2 / 2;
+      margin: 10rem 0rem 0rem 10rem;
+      display: flex;
+      flex-direction: column; }
+      .navcontent-ul--produkter_title {
+        font-size: var(--fs-heading);
+        margin-bottom: 1rem; }
+      .navcontent-ul--produkter_sjomat {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        margin-bottom: 1.5rem;
+        font-weight: 300; }
+        .navcontent-ul--produkter_sjomat-underline {
+          border-bottom: var(--border-bottom-8); }
+      .navcontent-ul--produkter_delikatesser {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        margin-bottom: 1.5rem;
+        font-weight: 300; }
+        .navcontent-ul--produkter_delikatesser-underline {
+          border-bottom: var(--border-bottom-8); }
+      .navcontent-ul--produkter_catering {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        margin-bottom: 1.5rem;
+        font-weight: 300; }
+        .navcontent-ul--produkter_catering-underline {
+          border-bottom: var(--border-bottom-8); }
+      .navcontent-ul--produkter_lunsj {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        margin-bottom: 1.5rem;
+        font-weight: 300; }
+        .navcontent-ul--produkter_lunsj-underline {
+          border-bottom: var(--border-bottom-8); }
+      .navcontent-ul--produkter_mengdekalk {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        font-weight: 300; }
+        .navcontent-ul--produkter_mengdekalk-underline {
+          border-bottom: var(--border-bottom-8); }
+    .navcontent-ul--om {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+      margin: 10rem 0rem 0rem 10rem;
+      display: flex;
+      flex-direction: column; }
+      .navcontent-ul--om_title {
+        font-size: var(--fs-heading);
+        margin-bottom: 1rem; }
+      .navcontent-ul--om_om {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        margin-bottom: 1.5rem;
+        font-weight: 300; }
+        .navcontent-ul--om_om-underline {
+          border-bottom: var(--border-bottom-8); }
+      .navcontent-ul--om_historie {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        margin-bottom: 1.5rem;
+        font-weight: 300; }
+        .navcontent-ul--om_historie-underline {
+          border-bottom: var(--border-bottom-8); }
+      .navcontent-ul--om_kvalitet {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        font-weight: 300; }
+        .navcontent-ul--om_kvalitet-underline {
+          border-bottom: var(--border-bottom-8); }
+    .navcontent-ul--kontakt {
+      grid-column: 3 / 3;
+      grid-row: 2 / 2;
+      display: flex;
+      flex-direction: column;
+      margin: 10rem 0rem 0rem 10rem; }
+      .navcontent-ul--kontakt_title {
+        font-size: var(--fs-heading);
+        margin-bottom: 1rem; }
+      .navcontent-ul--kontakt_finnoss {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        margin-bottom: 1.5rem;
+        font-weight: 300; }
+        .navcontent-ul--kontakt_finnoss-underline {
+          border-bottom: var(--border-bottom-8); }
+      .navcontent-ul--kontakt_skjema {
+        text-decoration: none;
+        font-size: var(--fs-title);
+        color: #000;
+        font-weight: 300; }
+        .navcontent-ul--kontakt_skjema-underline {
+          border-bottom: var(--border-bottom-8); }
+
+.navcontent:active {
+  transition: all .5s ease-out; }
 
 .landing {
   height: 100vh; }

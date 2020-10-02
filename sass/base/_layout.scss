@@ -86,6 +86,257 @@
     top: 0;
 }
 
+.display {
+    display: none;
+}
+
+.display:active {
+    transition: all .5s ease-out;
+}
+
+.navcontent {
+    background-color: var(--coral2);
+    height: 100vh;
+    width: 100vw;
+
+    &-ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+
+        list-style-type: none;
+        text-decoration: none;
+
+        height: 100%;
+        place-items: start;
+
+        color: #000;
+
+        &--hjem {
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;
+            margin: 10rem 0rem 0rem 10rem;
+
+
+            &_hjem {
+                color: #000;
+
+                text-decoration: none;
+
+                &--title {
+                    font-size: var(--fs-heading);
+
+                    &-underline {
+                        border-bottom: var(--border-bottom-8)
+                    }
+                }
+            }
+
+        }
+
+        &--nyheter {
+            grid-column: 2 / 2;
+            grid-row: 1 / 1;
+            margin: 10rem 0rem 0rem 10rem;
+
+            &_nyheter {
+                color: #000;
+
+                text-decoration: none;
+
+                &--title {
+                    font-size: var(--fs-heading);
+
+                    &-underline {
+                        border-bottom: var(--border-bottom-8)
+                    }
+                }
+            }
+        }
+
+        &--nettbutikk {
+            grid-column: 3 / 3;
+            grid-row: 1 / 1;
+            margin: 10rem 0rem 0rem 10rem;
+
+            &_nettbutikk {
+
+                &--title {
+                    font-size: var(--fs-heading);
+                }
+            }
+        }
+
+        &--produkter {
+            grid-column: 1 / 1;
+            grid-row: 2 / 2;
+            margin: 10rem 0rem 0rem 10rem;
+
+            display: flex;
+            flex-direction: column;
+
+            &_title {
+                font-size: var(--fs-heading);
+                margin-bottom: 1rem;
+            }
+
+            &_sjomat {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                margin-bottom: 1.5rem;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+            &_delikatesser {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                margin-bottom: 1.5rem;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+            &_catering {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                margin-bottom: 1.5rem;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+            &_lunsj {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                margin-bottom: 1.5rem;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+            &_mengdekalk {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+        }
+
+        &--om {
+            grid-column: 2 / 2;
+            grid-row: 2 / 2;
+            margin: 10rem 0rem 0rem 10rem;
+
+            display: flex;
+            flex-direction: column;
+
+            &_title {
+                font-size: var(--fs-heading);
+                margin-bottom: 1rem;
+            }
+
+            &_om {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                margin-bottom: 1.5rem;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+            &_historie {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                margin-bottom: 1.5rem;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+            &_kvalitet {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+        }
+
+        &--kontakt {
+            grid-column: 3 / 3;
+            grid-row: 2 / 2;
+            display: flex;
+            flex-direction: column;
+            margin: 10rem 0rem 0rem 10rem;
+
+            &_title {
+                font-size: var(--fs-heading);
+                margin-bottom: 1rem;
+            }
+
+            &_finnoss {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                margin-bottom: 1.5rem;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+            &_skjema {
+                text-decoration: none;
+                font-size: var(--fs-title);
+                color: #000;
+                font-weight: 300;
+
+                &-underline {
+                    border-bottom: var(--border-bottom-8)
+                }
+            }
+
+        }
+    }
+
+}
+
+.navcontent:active {
+    transition: all .5s ease-out;
+}
+
+
 .landing {
     height: 100vh;
 
