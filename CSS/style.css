@@ -64,6 +64,53 @@ body {
   scroll-behavior: smooth;
   font-family: museo-sans-rounded, sans-serif; }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  position: fixed;
+  background-color: #fff;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%; }
+  .navbar-icon {
+    display: grid;
+    place-items: center;
+    position: relative;
+    cursor: pointer; }
+    .navbar-icon > span {
+      width: 50px;
+      height: 3px;
+      background: #000;
+      transition: all 0.3s ease-in-out; }
+    .navbar-icon:hover span:nth-child(1) {
+      width: 35px; }
+    .navbar-icon:hover span:nth-child(2) {
+      width: 40px; }
+    .navbar-icon.active span:nth-child(1) {
+      transform-origin: center center;
+      transform: rotate(-45deg) translate(-9px, 10px);
+      width: 55px; }
+    .navbar-icon.active span:nth-child(2) {
+      transform: translateX(10px);
+      opacity: 0; }
+    .navbar-icon.active span:nth-child(3) {
+      transform-origin: center center;
+      transform: rotate(45deg) translate(-12px, -13px);
+      width: 55px; }
+    .navbar-icon--line1 {
+      width: 4.2rem;
+      justify-self: end; }
+    .navbar-icon--line2 {
+      margin-top: 1.5rem;
+      width: 3.5rem;
+      justify-self: end; }
+    .navbar-icon--line3 {
+      margin-top: 1.5rem; }
+
 .landing {
   height: 100vh; }
   .landing-landingplace {
@@ -85,12 +132,26 @@ body {
       height: 20rem;
       filter: brightness(100%); }
   .landing-slideshow {
-    grid-area: bottom;
-    justify-self: center;
-    align-self: center;
-    height: 50rem;
-    width: 150rem;
-    background-color: #eee; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 5rem;
+    height: 60vh;
+    width: 60vw;
+    background: url("/img/bcg-0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: .6rem;
+    box-shadow: .3rem .3rem 2rem .1rem #000; }
+    .landing-slideshow--btn1 {
+      margin-left: 3rem;
+      align-self: center;
+      justify-self: start; }
+    .landing-slideshow--btn2 {
+      margin-right: 3rem;
+      align-self: center;
+      justify-self: end; }
 
 .folgmed {
   height: 120vh;
@@ -111,6 +172,29 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr; }
 
+.arrows {
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  font-size: 4rem; }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--coral2);
+  color: #fff;
+  outline: none;
+  transition: all .2s; }
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer; }
+
 .fb-page {
   margin-left: 5rem; }
 
@@ -118,6 +202,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
+  grid-gap: 3rem;
   background-color: var(--darkblue1); }
   .footer-logo {
     height: 10rem;
