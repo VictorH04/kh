@@ -169,7 +169,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-self: center; }
-    @media screen and (min-width: 56.25em) {
+    @media screen and (max-width: 56.25em) {
       .folgmed-instafeed {
         margin-left: 5rem;
         justify-self: start; } }
@@ -178,7 +178,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr; }
-    @media screen and (min-width: 56.25em) {
+    @media screen and (max-width: 56.25em) {
       .folgmed-wrapper {
         display: grid;
         grid-template-columns: 1fr;

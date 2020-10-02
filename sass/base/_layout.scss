@@ -163,7 +163,7 @@
 
         justify-self: center;
 
-        @media screen and (min-width: $bp-medium) {
+        @media screen and (max-width: $bp-medium) {
             margin-left: 5rem;
             justify-self: start;
         }
@@ -175,7 +175,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
 
-        @media screen and (min-width: $bp-medium) {
+        @media screen and (max-width: $bp-medium) {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, 1fr);
