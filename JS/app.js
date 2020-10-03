@@ -41,16 +41,41 @@ let autoslide = setInterval(nextSlide, 4000);
 
 // Navbar
 const navbarIcon = document.querySelector('.navbar-icon');
-const navContent = document.querySelector('.navcontent');
+let navbar = document.querySelector('.navbar');
+const navContent = document.getElementById('navContent');
+// const active = doucmnet.querySelector('.active');
+let display = navContent.classList.toggle('display');
 
 navbarIcon.classList.remove('active');
-navContent.classList.add('display');
 
 function toggleNav() {
-	navbarIcon.classList.toggle('active');
-	navContent.classList.toggle('display');
-
+	if (navbarIcon.classList.contains('active')) {
+		closeNav();
+	} else {
+		openNav();
+	}
+	// openNav();
+	// closeNav();
 	console.log('clicked');
+}
+
+function openNav() {
+	navbarIcon.classList.toggle('active');
+	navContent.style.height = '100%';
+
+	navContent.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+
+	console.log('aaaa');
+}
+
+function closeNav() {
+	navContent.style.height = '0%';
+
+	let closing = navContent.animate([ { opacity: '1' }, { opacity: '.1' } ], { duration: 250, fill: 'forwards' });
+
+	closing.onfinish = function(e) {
+		navbarIcon.classList.toggle('active');
+	};
 }
 
 navbarIcon.addEventListener('click', toggleNav);
@@ -59,8 +84,6 @@ navbarIcon.addEventListener('click', toggleNav);
 window.onscroll = function() {
 	scrollFunc();
 };
-
-let navbar = document.querySelector('.navbar');
 
 let sticky = navbar.offsetTop;
 
