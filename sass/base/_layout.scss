@@ -202,10 +202,22 @@
 
         color: #000;
 
+        @media screen and (max-width: $bp-medium) {
+            grid-template-rows: 20rem 50rem;
+        }
+
+        @media screen and (max-width: $bp-small) {
+            font-size: 1rem;
+        }
+
         &--hjem {
             grid-column: 1 / 1;
             grid-row: 1 / 1;
             margin: 10rem 0rem 0rem 10rem;
+
+            @media screen and (max-width: $bp-medium) {
+                margin: 5rem 0rem 0rem 5rem;
+            }
 
 
             &_hjem {
@@ -219,6 +231,10 @@
                     &-underline {
                         border-bottom: var(--border-bottom-8)
                     }
+
+                    @media screen and (max-width: $bp-small) {
+                        font-size: 2.5rem;
+                    }
                 }
             }
 
@@ -228,6 +244,10 @@
             grid-column: 2 / 2;
             grid-row: 1 / 1;
             margin: 10rem 0rem 0rem 10rem;
+
+            @media screen and (max-width: $bp-medium) {
+                margin: 5rem 0rem 0rem 5rem;
+            }
 
             &_nyheter {
                 color: #000;
@@ -240,6 +260,10 @@
                     &-underline {
                         border-bottom: var(--border-bottom-8)
                     }
+
+                    @media screen and (max-width: $bp-small) {
+                        font-size: 2.5rem;
+                    }
                 }
             }
         }
@@ -249,10 +273,22 @@
             grid-row: 1 / 1;
             margin: 10rem 0rem 0rem 10rem;
 
+            @media screen and (max-width: $bp-medium) {
+                margin: 5rem 0rem 0rem 5rem;
+            }
+
+            @media screen and (max-width: $bp-small) {
+                margin: 5rem 0rem 0rem 2rem;
+            }
+
             &_nettbutikk {
 
                 &--title {
                     font-size: var(--fs-heading);
+
+                    @media screen and (max-width: $bp-small) {
+                        font-size: 2.5rem;
+                    }
                 }
             }
         }
@@ -265,9 +301,17 @@
             display: flex;
             flex-direction: column;
 
+            @media screen and (max-width: $bp-medium) {
+                margin: 5rem 0rem 0rem 5rem;
+            }
+
             &_title {
                 font-size: var(--fs-heading);
                 margin-bottom: 1rem;
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2.5rem;
+                }
             }
 
             &_sjomat {
@@ -276,6 +320,10 @@
                 color: #000;
                 margin-bottom: 1.5rem;
                 font-weight: 300;
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
+                }
 
                 &-underline {
                     border-bottom: var(--border-bottom-8)
@@ -292,6 +340,10 @@
                 &-underline {
                     border-bottom: var(--border-bottom-8)
                 }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
+                }
             }
 
             &_catering {
@@ -302,7 +354,11 @@
                 font-weight: 300;
 
                 &-underline {
-                    border-bottom: var(--border-bottom-8)
+                    border-bottom: var(--border-bottom-8);
+                }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
                 }
             }
 
@@ -314,7 +370,11 @@
                 font-weight: 300;
 
                 &-underline {
-                    border-bottom: var(--border-bottom-8)
+                    border-bottom: var(--border-bottom-8);
+                }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
                 }
             }
 
@@ -326,6 +386,10 @@
 
                 &-underline {
                     border-bottom: var(--border-bottom-8)
+                }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
                 }
             }
 
@@ -339,9 +403,17 @@
             display: flex;
             flex-direction: column;
 
+            @media screen and (max-width: $bp-medium) {
+                margin: 5rem 0rem 0rem 5rem;
+            }
+
             &_title {
                 font-size: var(--fs-heading);
                 margin-bottom: 1rem;
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2.5rem;
+                }
             }
 
             &_om {
@@ -353,6 +425,10 @@
 
                 &-underline {
                     border-bottom: var(--border-bottom-8)
+                }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
                 }
             }
 
@@ -366,6 +442,10 @@
                 &-underline {
                     border-bottom: var(--border-bottom-8)
                 }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
+                }
             }
 
             &_kvalitet {
@@ -376,6 +456,10 @@
 
                 &-underline {
                     border-bottom: var(--border-bottom-8)
+                }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
                 }
             }
 
@@ -388,9 +472,21 @@
             flex-direction: column;
             margin: 10rem 0rem 0rem 10rem;
 
+            @media screen and (max-width: $bp-medium) {
+                margin: 5rem 0rem 0rem 5rem;
+            }
+
+            @media screen and (max-width: $bp-small) {
+                margin: 5rem 0rem 0rem 2rem;
+            }
+
             &_title {
                 font-size: var(--fs-heading);
                 margin-bottom: 1rem;
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2.5rem;
+                }
             }
 
             &_finnoss {
@@ -403,6 +499,10 @@
                 &-underline {
                     border-bottom: var(--border-bottom-8)
                 }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
+                }
             }
 
             &_skjema {
@@ -413,6 +513,10 @@
 
                 &-underline {
                     border-bottom: var(--border-bottom-8)
+                }
+
+                @media screen and (max-width: $bp-small) {
+                    font-size: 2rem;
                 }
             }
 
@@ -840,9 +944,15 @@
         }
 
         @media screen and (max-width: 1600px) {
-            justify-self: center;
+            justify-self: start;
+            margin-left: 1rem;
+
             grid-column: 1 / 1;
             grid-row: 2 / 2;
+        }
+
+        @media screen and (max-width: $bp-small) {
+            justify-self: center;
         }
 
         &-img {
@@ -883,9 +993,13 @@
 
 
         @media screen and (max-width: 1600px) {
-            justify-self: center;
+            justify-self: start;
             grid-column: 2 / 2;
             grid-row: 2 / 2;
+        }
+
+        @media screen and (max-width: $bp-small) {
+            justify-self: center;
         }
 
         &-img {
@@ -924,9 +1038,13 @@
         }
 
         @media screen and (max-width: 1600px) {
-            justify-self: center;
+            justify-self: start;
             grid-column: 3 / 3;
             grid-row: 2 / 2;
+        }
+
+        @media screen and (max-width: $bp-small) {
+            justify-self: center;
         }
 
         &-img {
@@ -965,12 +1083,14 @@
         }
 
         @media screen and (max-width: 1600px) {
-            justify-self: center;
+            justify-self: start;
             grid-column: 4 / 4;
             grid-row: 2 / 2;
         }
 
-
+        @media screen and (max-width: $bp-small) {
+            justify-self: center;
+        }
 
         &-img {
             fill: #fff;
@@ -1010,6 +1130,10 @@
             grid-column: 2 / 2;
             grid-row: 1 / 1;
         }
+
+        @media screen and (max-width: $bp-small) {
+            justify-self: center;
+        }
     }
 
     &-adresse {
@@ -1027,6 +1151,10 @@
             grid-column: 3 / 3;
             grid-row: 1 / 1;
         }
+
+        @media screen and (max-width: $bp-small) {
+            justify-self: center;
+        }
     }
 }
 
@@ -1035,18 +1163,39 @@
     height: 140vh;
 
     @media screen and (max-width: 1600px) {
-        height: 200vh;
-    }
-
-    @media screen and (max-width: 1366px) {
         height: 220vh;
     }
+
+    @media screen and (max-width: 1440px) {
+        height: 220vh;
+    }
+
+    @media screen and (max-width: 1344px) {
+        height: 220vh;
+    }
+
+    @media screen and (max-width: 1150px) {
+        height: 220vh;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+        height: 230vh;
+    }
+
+    @media screen and (max-width: $bp-small) {
+        height: 230vh;
+    }
+
 
     .title {
         display: flex;
         flex-direction: column;
         padding: var(--big-padding);
         color: #fff;
+
+        @media screen and (max-width: $bp-small) {
+            text-align: center;
+        }
 
         &-produkter {
             font-size: var(--fs-text-big);
@@ -1069,6 +1218,10 @@
         font-size: var(--fs-title);
         font-weight: 100;
         padding: var(--title-padding);
+
+        @media screen and (max-width: $bp-small) {
+            text-align: center;
+        }
     }
 
     .pictures {
@@ -1083,16 +1236,41 @@
             grid-template-columns: 1fr;
         }
 
+        @media screen and (max-width: $bp-small) {
+            margin-top: 2.5rem;
+        }
+
+
         &-pic1 {
             height: 55rem;
 
             justify-self: start;
+
+            @media screen and (max-width: $bp-medium) {
+                height: 35rem;
+            }
+
+            @media screen and (max-width: $bp-small) {
+                height: 30rem;
+                justify-self: center;
+                margin-right: 4.5rem;
+            }
         }
 
         &-pic2 {
             height: 55rem;
 
             justify-self: start;
+
+            @media screen and (max-width: $bp-medium) {
+                height: 35rem;
+            }
+
+            @media screen and (max-width: $bp-small) {
+                height: 25rem;
+                justify-self: center;
+                margin-right: 4rem;
+            }
         }
     }
 
@@ -1102,6 +1280,11 @@
 
         @media screen and (max-width: 1600px) {
             margin-top: 5rem;
+        }
+
+        @media screen and (max-width: $bp-small) {
+            text-align: center;
+            margin-left: 0;
         }
 
         &-text {
