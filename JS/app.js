@@ -1,55 +1,55 @@
-// Get the buttons
-const container = document.getElementById('slideshow');
-const nextBtn = document.querySelector('.nextBtn');
-const prevBtn = document.querySelector('.prevBtn');
+// // Get the buttons
+// const container = document.getElementById('slideshow');
+// const nextBtn = document.querySelector('.nextBtn');
+// const prevBtn = document.querySelector('.prevBtn');
 
-// counter
-let counter = 0;
+// // counter
+// let counter = 0;
 
-// event listeners
+// // event listeners
 
-nextBtn.addEventListener('click', nextSlide);
-prevBtn.addEventListener('click', prevSlide);
+// nextBtn.addEventListener('click', nextSlide);
+// prevBtn.addEventListener('click', prevSlide);
 
-function nextSlide() {
-	container.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+// function nextSlide() {
+// 	container.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
 
-	if (counter === 2) {
-		counter = -1;
-	}
+// 	if (counter === 2) {
+// 		counter = -1;
+// 	}
 
-	counter++;
+// 	counter++;
 
-	container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
-	console.log(counter);
-}
+// 	container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
+// 	console.log(counter);
+// }
 
-function prevSlide() {
-	container.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+// function prevSlide() {
+// 	container.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
 
-	if (counter === 0) {
-		counter = 3;
-	}
+// 	if (counter === 0) {
+// 		counter = 3;
+// 	}
 
-	counter--;
+// 	counter--;
 
-	container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
-	console.log(counter);
-}
+// 	container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
+// 	console.log(counter);
+// }
 
-let autoslide = setInterval(nextSlide, 4000);
+// let autoslide = setInterval(nextSlide, 4000);
 
 // Navbar
-const navbarIcon = document.querySelector('.navbar-icon');
-let navbar = document.querySelector('.navbar');
+const navbar2Icon = document.querySelector('.navbar2-icon');
+let navbar2 = document.querySelector('.navbar2');
 const navContent = document.getElementById('navContent');
 // const active = doucmnet.querySelector('.active');
 let display = navContent.classList.toggle('display');
 
-navbarIcon.classList.remove('active');
+navbar2Icon.classList.remove('active');
 
 function toggleNav() {
-	if (navbarIcon.classList.contains('active')) {
+	if (navbar2Icon.classList.contains('active')) {
 		closeNav();
 	} else {
 		openNav();
@@ -60,7 +60,7 @@ function toggleNav() {
 }
 
 function openNav() {
-	navbarIcon.classList.toggle('active');
+	navbar2Icon.classList.toggle('active');
 	navContent.style.height = '100%';
 
 	navContent.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
@@ -74,11 +74,11 @@ function closeNav() {
 	let closing = navContent.animate([ { opacity: '1' }, { opacity: '.1' } ], { duration: 250, fill: 'forwards' });
 
 	closing.onfinish = function(e) {
-		navbarIcon.classList.toggle('active');
+		navbar2Icon.classList.toggle('active');
 	};
 }
 
-navbarIcon.addEventListener('click', toggleNav);
+navbar2Icon.addEventListener('click', toggleNav);
 
 // Navbar sticky
 window.onscroll = function() {
