@@ -192,6 +192,9 @@ body {
       @media screen and (max-width: 56.25em) {
         .navcontent-ul--hjem {
           margin: 5rem 0rem 0rem 5rem; } }
+      @media screen and (max-width: 425px) {
+        .navcontent-ul--hjem {
+          margin: 2rem 0rem 0rem 1rem; } }
       .navcontent-ul--hjem_hjem {
         color: #000;
         text-decoration: none; }
@@ -202,6 +205,9 @@ body {
           @media screen and (max-width: 37.5em) {
             .navcontent-ul--hjem_hjem--title {
               font-size: 2.5rem; } }
+          @media screen and (max-width: 375px) {
+            .navcontent-ul--hjem_hjem--title {
+              font-size: 1.8rem; } }
     .navcontent-ul--nyheter {
       grid-column: 2 / 2;
       grid-row: 1 / 1;
@@ -209,6 +215,9 @@ body {
       @media screen and (max-width: 56.25em) {
         .navcontent-ul--nyheter {
           margin: 5rem 0rem 0rem 5rem; } }
+      @media screen and (max-width: 425px) {
+        .navcontent-ul--nyheter {
+          margin: 2rem 0rem 0rem 1rem; } }
       .navcontent-ul--nyheter_nyheter {
         color: #000;
         text-decoration: none; }
@@ -219,6 +228,9 @@ body {
           @media screen and (max-width: 37.5em) {
             .navcontent-ul--nyheter_nyheter--title {
               font-size: 2.5rem; } }
+          @media screen and (max-width: 375px) {
+            .navcontent-ul--nyheter_nyheter--title {
+              font-size: 1.8rem; } }
     .navcontent-ul--nettbutikk {
       grid-column: 3 / 3;
       grid-row: 1 / 1;
@@ -229,11 +241,17 @@ body {
       @media screen and (max-width: 37.5em) {
         .navcontent-ul--nettbutikk {
           margin: 5rem 0rem 0rem 2rem; } }
+      @media screen and (max-width: 425px) {
+        .navcontent-ul--nettbutikk {
+          margin: 2rem 0rem 0rem 1rem; } }
       .navcontent-ul--nettbutikk_nettbutikk--title {
         font-size: var(--fs-heading); }
         @media screen and (max-width: 37.5em) {
           .navcontent-ul--nettbutikk_nettbutikk--title {
             font-size: 2.5rem; } }
+        @media screen and (max-width: 375px) {
+          .navcontent-ul--nettbutikk_nettbutikk--title {
+            font-size: 1.8rem; } }
     .navcontent-ul--produkter {
       grid-column: 1 / 1;
       grid-row: 2 / 2;
@@ -243,12 +261,18 @@ body {
       @media screen and (max-width: 56.25em) {
         .navcontent-ul--produkter {
           margin: 5rem 0rem 0rem 5rem; } }
+      @media screen and (max-width: 425px) {
+        .navcontent-ul--produkter {
+          margin: 2rem 0rem 0rem 1rem; } }
       .navcontent-ul--produkter_title {
         font-size: var(--fs-heading);
         margin-bottom: 1rem; }
         @media screen and (max-width: 37.5em) {
           .navcontent-ul--produkter_title {
             font-size: 2.5rem; } }
+        @media screen and (max-width: 375px) {
+          .navcontent-ul--produkter_title {
+            font-size: 2rem; } }
       .navcontent-ul--produkter_sjomat {
         text-decoration: none;
         font-size: var(--fs-title);
@@ -312,12 +336,18 @@ body {
       @media screen and (max-width: 56.25em) {
         .navcontent-ul--om {
           margin: 5rem 0rem 0rem 5rem; } }
+      @media screen and (max-width: 425px) {
+        .navcontent-ul--om {
+          margin: 2rem 0rem 0rem 1rem; } }
       .navcontent-ul--om_title {
         font-size: var(--fs-heading);
         margin-bottom: 1rem; }
         @media screen and (max-width: 37.5em) {
           .navcontent-ul--om_title {
             font-size: 2.5rem; } }
+        @media screen and (max-width: 375px) {
+          .navcontent-ul--om_title {
+            font-size: 2rem; } }
       .navcontent-ul--om_om {
         text-decoration: none;
         font-size: var(--fs-title);
@@ -362,12 +392,18 @@ body {
       @media screen and (max-width: 37.5em) {
         .navcontent-ul--kontakt {
           margin: 5rem 0rem 0rem 2rem; } }
+      @media screen and (max-width: 425px) {
+        .navcontent-ul--kontakt {
+          margin: 2rem 0rem 0rem 1rem; } }
       .navcontent-ul--kontakt_title {
         font-size: var(--fs-heading);
         margin-bottom: 1rem; }
         @media screen and (max-width: 37.5em) {
           .navcontent-ul--kontakt_title {
             font-size: 2.5rem; } }
+        @media screen and (max-width: 375px) {
+          .navcontent-ul--kontakt_title {
+            font-size: 2rem; } }
       .navcontent-ul--kontakt_finnoss {
         text-decoration: none;
         font-size: var(--fs-title);
@@ -401,7 +437,7 @@ body {
     grid-template-rows: 200px 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    grid-template-areas: "top" "bottom";
+    grid-template-areas: "top" "bottom";
     justify-items: center;
     background-attachment: fixed;
     background-image: url(/img/background-landing.jpg);
@@ -675,6 +711,13 @@ body {
         grid-column: 1 / 1;
         grid-row: 1 / 1;
         align-self: start; } }
+    @media screen and (max-width: 425px) {
+      .footer2-logo {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        align-self: start;
+        height: 6rem;
+        width: 6rem; } }
   .footer2-social {
     align-self: center;
     justify-self: center;
@@ -697,6 +740,9 @@ body {
     .footer2-social-img {
       fill: #fff;
       height: 4rem; }
+      @media screen and (max-width: 425px) {
+        .footer2-social-img {
+          height: 4rem; } }
     .footer2-social-div {
       background-color: #fff;
       border-radius: .8rem;
@@ -706,6 +752,10 @@ body {
       justify-content: center;
       align-items: center;
       transition: all .2s; }
+      @media screen and (max-width: 425px) {
+        .footer2-social-div {
+          height: 6rem;
+          width: 6rem; } }
     .footer2-social-div:hover {
       transform: translateY(-0.5rem);
       box-shadow: var(--shadow-light-4); }
@@ -730,6 +780,9 @@ body {
     .footer2-socialface-img {
       fill: #fff;
       height: 4rem; }
+      @media screen and (max-width: 425px) {
+        .footer2-socialface-img {
+          height: 4rem; } }
     .footer2-socialface-div {
       background-color: #fff;
       border-radius: .8rem;
@@ -739,6 +792,10 @@ body {
       justify-content: center;
       align-items: center;
       transition: all .2s; }
+      @media screen and (max-width: 425px) {
+        .footer2-socialface-div {
+          height: 6rem;
+          width: 6rem; } }
     .footer2-socialface-div:hover {
       transform: translateY(-0.5rem);
       box-shadow: var(--shadow-light-4); }
@@ -762,7 +819,10 @@ body {
         justify-self: center; } }
     .footer2-socialsmak-img {
       fill: #fff;
-      height: 6rem; }
+      height: 4rem; }
+      @media screen and (max-width: 425px) {
+        .footer2-socialsmak-img {
+          height: 4rem; } }
     .footer2-socialsmak-div {
       background-color: #fff;
       border-radius: .8rem;
@@ -772,6 +832,10 @@ body {
       justify-content: center;
       align-items: center;
       transition: all .2s; }
+      @media screen and (max-width: 425px) {
+        .footer2-socialsmak-div {
+          height: 6rem;
+          width: 6rem; } }
     .footer2-socialsmak-div:hover {
       transform: translateY(-0.5rem);
       box-shadow: var(--shadow-light-4); }
@@ -796,6 +860,9 @@ body {
     .footer2-socialmail-img {
       fill: #fff;
       height: 4rem; }
+      @media screen and (max-width: 425px) {
+        .footer2-socialmail-img {
+          height: 4rem; } }
     .footer2-socialmail-div {
       background-color: #fff;
       border-radius: .8rem;
@@ -805,6 +872,10 @@ body {
       justify-content: center;
       align-items: center;
       transition: all .2s; }
+      @media screen and (max-width: 425px) {
+        .footer2-socialmail-div {
+          height: 6rem;
+          width: 6rem; } }
     .footer2-socialmail-div:hover {
       transform: translateY(-0.5rem);
       box-shadow: var(--shadow-light-4); }
@@ -823,6 +894,9 @@ body {
     @media screen and (max-width: 37.5em) {
       .footer2-tel {
         justify-self: center; } }
+    @media screen and (max-width: 425px) {
+      .footer2-tel {
+        font-size: 1.25rem; } }
   .footer2-adresse {
     grid-column: 4 / 4;
     grid-row: 1 / 1;
@@ -838,6 +912,27 @@ body {
     @media screen and (max-width: 37.5em) {
       .footer2-adresse {
         justify-self: center; } }
+    @media screen and (max-width: 425px) {
+      .footer2-adresse {
+        font-size: 1.25rem; } }
+  .footer2-tid {
+    grid-column: 5 / 5;
+    grid-row: 1 / 1;
+    font-size: var(--fs-text);
+    color: #000;
+    align-self: center;
+    justify-self: center; }
+    @media screen and (max-width: 1600px) {
+      .footer2-tid {
+        justify-self: center;
+        grid-column: 4 / 4;
+        grid-row: 1 / 1; } }
+    @media screen and (max-width: 37.5em) {
+      .footer2-tid {
+        justify-self: center; } }
+    @media screen and (max-width: 425px) {
+      .footer2-tid {
+        font-size: 1.25rem; } }
 
 .wrapperprodukter {
   background-color: var(--darkblue1);
@@ -860,6 +955,15 @@ body {
   @media screen and (max-width: 37.5em) {
     .wrapperprodukter {
       height: 230vh; } }
+  @media screen and (max-width: 425px) {
+    .wrapperprodukter {
+      height: 230vh; } }
+  @media screen and (max-width: 375px) {
+    .wrapperprodukter {
+      height: 230vh; } }
+  @media screen and (max-width: 414px) {
+    .wrapperprodukter {
+      height: 245vh; } }
   .wrapperprodukter .title {
     display: flex;
     flex-direction: column;
@@ -868,14 +972,23 @@ body {
     @media screen and (max-width: 37.5em) {
       .wrapperprodukter .title {
         text-align: center; } }
+    @media screen and (max-width: 375px) {
+      .wrapperprodukter .title {
+        padding: 5rem 2.5rem; } }
     .wrapperprodukter .title-produkter {
       font-size: var(--fs-text-big); }
+      @media screen and (max-width: 425px) {
+        .wrapperprodukter .title-produkter {
+          text-align: left; } }
     .wrapperprodukter .title-sjomat {
       font-size: var(--fs-heading-big);
       font-weight: 300;
       margin-left: 1rem; }
       .wrapperprodukter .title-sjomat--underline {
         border-bottom: var(--border-bottom-2); }
+      @media screen and (max-width: 425px) {
+        .wrapperprodukter .title-sjomat {
+          text-align: left; } }
   .wrapperprodukter .text {
     color: #fff;
     font-size: var(--fs-title);
@@ -884,6 +997,12 @@ body {
     @media screen and (max-width: 37.5em) {
       .wrapperprodukter .text {
         text-align: center; } }
+    @media screen and (max-width: 425px) {
+      .wrapperprodukter .text {
+        text-align: left; } }
+    @media screen and (max-width: 375px) {
+      .wrapperprodukter .text {
+        padding: 5rem 2.5rem; } }
   .wrapperprodukter .pictures {
     margin-top: 10rem;
     margin-left: 5rem;
@@ -897,6 +1016,9 @@ body {
     @media screen and (max-width: 37.5em) {
       .wrapperprodukter .pictures {
         margin-top: 2.5rem; } }
+    @media screen and (max-width: 425px) {
+      .wrapperprodukter .pictures {
+        margin-left: 2.5rem; } }
     .wrapperprodukter .pictures-pic1 {
       height: 55rem;
       justify-self: start; }
@@ -908,6 +1030,15 @@ body {
           height: 30rem;
           justify-self: center;
           margin-right: 4.5rem; } }
+      @media screen and (max-width: 425px) {
+        .wrapperprodukter .pictures-pic1 {
+          height: 20rem;
+          justify-self: center;
+          margin-right: 4.5rem; } }
+      @media screen and (max-width: 375px) {
+        .wrapperprodukter .pictures-pic1 {
+          height: 20rem;
+          justify-self: start; } }
     .wrapperprodukter .pictures-pic2 {
       height: 55rem;
       justify-self: start; }
@@ -919,6 +1050,15 @@ body {
           height: 25rem;
           justify-self: center;
           margin-right: 4rem; } }
+      @media screen and (max-width: 425px) {
+        .wrapperprodukter .pictures-pic2 {
+          height: 17.5rem;
+          justify-self: center;
+          margin-right: 4.5rem; } }
+      @media screen and (max-width: 375px) {
+        .wrapperprodukter .pictures-pic2 {
+          height: 16rem;
+          justify-self: start; } }
   .wrapperprodukter .smakenavhavet {
     margin-top: 20rem;
     margin-left: 5rem; }
@@ -936,3 +1076,6 @@ body {
       font-style: italic; }
       .wrapperprodukter .smakenavhavet-text--underline {
         border-bottom: var(--border-bottom-9); }
+      @media screen and (max-width: 425px) {
+        .wrapperprodukter .smakenavhavet-text {
+          font-size: 3rem; } }
