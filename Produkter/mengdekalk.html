@@ -1,18 +1,290 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Knutstad & Holen</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../CSS/main.css">
-        <link rel="stylesheet" href="https://use.typekit.net/pdi5tvw.css">
-    </head>
-    <body>
-      <h1>hei</h1>
-        
-        <script src="JS/app.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Knutstad & Holen | Produkter | Mengdekalkulator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pdi5tvw.css">
+    <link rel="shortcut icon" href="/img/k&h-k.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="navbar2 sticky">
+        <div class="navbar2-icon active">
+            <span class="navbar2-icon--line1"></span>
+            <span class="navbar2-icon--line2"></span>
+            <span class="navbar2-icon--line3"></span>
+        </div>
+    </nav>
+
+    <div class="navcontent display" id="navContent">
+
+        <ul class="navcontent-ul">
+
+            <li class="navcontent-ul--hjem">
+                <a class="navcontent-ul--hjem_hjem" href="/hjem.html">
+                    <h1 class="navcontent-ul--hjem_hjem--title"><span
+                            class="navcontent-ul--hjem_hjem--title-underline">Hjem</span></h1>
+                </a>
+            </li>
+
+            <li class="navcontent-ul--nyheter">
+                <a class="navcontent-ul--nyheter_nyheter" href="#nyheter">
+                    <h1 class="navcontent-ul--nyheter_nyheter--title"><span
+                            class="navcontent-ul--nyheter_nyheter--title-underline">Nyheter!</span></h1>
+                </a>
+            </li>
+
+            <li class="navcontent-ul--nettbutikk">
+                <h1 class="navcontent-ul--nettbutikk_nettbutikk--title">Nettbutikk</h1>
+            </li>
+
+            <li class="navcontent-ul--produkter">
+                <h1 class="navcontent-ul--produkter_title">Produkter</h1>
+                <a class="navcontent-ul--produkter_sjomat" href="/Produkter/sjomat.html"><span
+                        class="navcontent-ul--produkter_sjomat-underline">Sjømat</span></a>
+
+                <a class="navcontent-ul--produkter_delikatesser" href="/Produkter/delikatesser.html"><span
+                        class="navcontent-ul--produkter_delikatesser-underline">Delikatesser</span></a>
+
+                <a class="navcontent-ul--produkter_catering" href="/Produkter/catering.html"><span
+                        class="navcontent-ul--produkter_catering-underline">Catering</span></a>
+
+                <a class="navcontent-ul--produkter_lunsj" href="/Produkter/lunsj.html"><span
+                        class="navcontent-ul--produkter_lunsj-underline">Lunsjservering</span></a>
+
+                <a class="navcontent-ul--produkter_mengdekalk" href="/Produkter/mengdekalk.html"><span
+                        class="navcontent-ul--produkter_mengdekalk-underline">Mengdekalkulator</span></a>
+            </li>
+
+            <li class="navcontent-ul--om">
+                <h1 class="navcontent-ul--om_title">Om oss</h1>
+                <a class="navcontent-ul--om_om" href="/Om-oss/om.html"><span
+                        class="navcontent-ul--om_om-underline">Om</a>
+                <a class="navcontent-ul--om_historie" href="/Om-oss/historie.html"><span
+                        class="navcontent-ul--om_historie-underline">Historie</span></a>
+                <a class="navcontent-ul--om_kvalitet" href="/Om-oss/kvalitet.html"><span
+                        class="navcontent-ul--om_kvalitet-underline">Kvalitet</span></a>
+            </li>
+
+            <li class="navcontent-ul--kontakt">
+                <h1 class="navcontent-ul--kontakt_title">Kontakt oss!</h1>
+                <a class="navcontent-ul--kontakt_finnoss" href="/Kontakt-oss/finnoss.html"><span
+                        class="navcontent-ul--kontakt_finnoss-underline">Finn oss</span></a>
+                <a class="navcontent-ul--kontakt_skjema" href="/Kontakt-oss/kontaktskjema.html"><span
+                        class="navcontent-ul--kontakt_skjema-underline">Kontakt-skjema</span></a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="wrapperkalk">
+
+        <div class="title">
+
+            <p class="title-produkter">- Produkter</p>
+            <br>
+            <h1 class="title-kalk"><span class="title-kalk--underline">Mengdekalkulator</span></h1>
+
+        </div>
+
+        <div class="kalkulator">
+
+            <div class="kalkulator-item">
+
+                <h1 class="kalkulator-item--title">Fiskefillet | 200g voksen | 100g barn |</h1>
+
+                <input class="kalkulator-item--input" type="number" name="Fiskefillet" id="inputFiskVoksen"
+                    placeholder="Voksen" autocomplete="off">
+
+                <p class="kalkulator-item--text">+</p>
+
+                <input class="kalkulator-item--input" type="number" name="Fiskefillet" id="inputFiskBarn"
+                    placeholder="Barn" autocomplete="off">
+
+                <p class="kalkulator-item--text">=</p>
+
+                <p class="kalkulator-item--value">Value</p>
+
+            </div>
+
+            <div class="kalkulator-item">
+
+                <h1 class="kalkulator-item--title">Fisk i skiver | 300g voksen | 150g barn |</h1>
+
+                <input class="kalkulator-item--input" type="number" name="Fiskiskiver" id="inputFiskskiverVoksen"
+                    placeholder="Voksen" autocomplete="off">
+
+                <p class="kalkulator-item--text">+</p>
+
+                <input class="kalkulator-item--input" type="number" name="Fiskiskiver" id="inputFiskskiverBarn"
+                    placeholder="Barn" autocomplete="off">
+
+                <p class="kalkulator-item--text">=</p>
+
+                <p class="kalkulator-item--value">Value</p>
+
+            </div>
+
+            <div class="kalkulator-item">
+
+                <h1 class="kalkulator-item--title">Lever av skrei | 100g voksen | 50g barn |</h1>
+
+                <input class="kalkulator-item--input" type="number" name="Leveravskrei" id="inputLeverVoksen"
+                    placeholder="Voksen" autocomplete="off">
+
+                <p class="kalkulator-item--text">+</p>
+
+                <input class="kalkulator-item--input" type="number" name="Leveravskrei" id="inputLeverBarn"
+                    placeholder="Barn" autocomplete="off">
+
+                <p class="kalkulator-item--text">=</p>
+
+                <p class="kalkulator-item--value">Value</p>
+
+            </div>
+
+            <div class="kalkulator-item">
+
+                <h1 class="kalkulator-item--title">Rogn av skrei | 100g voksen | 50g barn |</h1>
+
+                <input class="kalkulator-item--input" type="number" name="Rognavskrei" id="inputRognVoksen"
+                    placeholder="Voksen" autocomplete="off">
+
+                <p class="kalkulator-item--text">+</p>
+
+                <input class="kalkulator-item--input" type="number" name="Rognavskrei" id="inputRognBarn"
+                    placeholder="Barn" autocomplete="off">
+
+                <p class="kalkulator-item--text">=</p>
+
+                <p class="kalkulator-item--value">Value</p>
+
+            </div>
+
+            <div class="kalkulator-item">
+
+                <h1 class="kalkulator-item--title">Reker | 500g voksen | 250g barn |</h1>
+
+                <input class="kalkulator-item--input" type="number" name="reker" id="inputRekerVoksen"
+                    placeholder="Voksen" autocomplete="off">
+
+                <p class="kalkulator-item--text">+</p>
+
+                <input class="kalkulator-item--input" type="number" name="reker" id="inputRekerBarn" placeholder="Barn"
+                    autocomplete="off">
+
+                <p class="kalkulator-item--text">=</p>
+
+                <p class="kalkulator-item--value">Value</p>
+
+            </div>
+
+            <div class="kalkulator-item">
+
+                <h1 class="kalkulator-item--title">Blåskjell | 500g voksen | 250g barn |</h1>
+
+                <input class="kalkulator-item--input" type="number" name="blåskjell" id="inputBlaaskjellVoksen"
+                    placeholder="Voksen" autocomplete="off">
+
+                <p class="kalkulator-item--text">+</p>
+
+                <input class="kalkulator-item--input" type="number" name="blåskjell" id="inputBlaaskjellBarn"
+                    placeholder="Barn" autocomplete="off">
+
+                <p class="kalkulator-item--text">=</p>
+
+                <p class="kalkulator-item--value">Value</p>
+
+            </div>
+
+            <div class="kalkulator-item">
+
+                <h1 class="kalkulator-item--title">Èn Krabbe | 500g voksen | 250g barn |</h1>
+
+                <input class="kalkulator-item--input" type="number" name="krabbe" id="inputKrabbeVoksen"
+                    placeholder="Voksen" autocomplete="off">
+
+                <p class="kalkulator-item--text">+</p>
+
+                <input class="kalkulator-item--input" type="number" name="krabbe" id="inputKrabbeBarn"
+                    placeholder="Barn" autocomplete="off">
+
+                <p class="kalkulator-item--text">=</p>
+
+                <p class="kalkulator-item--value">Value</p>
+
+            </div>
+
+            <div class="kalkulator-item">
+
+                <h1 class="kalkulator-item--title">Èn Hummer | 500g voksen | 250g barn |</h1>
+
+                <input class="kalkulator-item--input" type="number" name="Hummer" id="inputHummerVoksen"
+                    placeholder="Voksen" autocomplete="off">
+
+                <p class="kalkulator-item--text">+</p>
+
+                <input class="kalkulator-item--input" type="number" name="Hummer" id="inputHummerBarn"
+                    placeholder="Barn" autocomplete="off">
+
+                <p class="kalkulator-item--text">=</p>
+
+                <p class="kalkulator-item--value">Value</p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="smakenavhavet">
+
+            <h1 class="smakenavhavet-text"><span class="smakenavhavet-text--underline">- Smaken av havet</span></h1>
+
+        </div>
+
+    </div>
+
+    <footer class="footer2">
+
+        <img class="footer2-logo" src="/img/k&h-k.svg" alt="K" srcset="">
+
+
+        <a class="footer2-social" href="https://www.instagram.com/knutstadholen/">
+            <div class="footer2-social-div"><img class="footer2-social-img" src="/img/instagram.svg" alt=""
+                    srcset=""></img></div>
+        </a>
+        <a class="footer2-socialface" href="https://www.facebook.com/knutstadholen">
+            <div class="footer2-socialface-div"><img class="footer2-socialface-img" src="/img/facebook.svg" alt=""
+                    srcset=""></img></div>
+        </a>
+        <a class="footer2-socialsmak" href="https://smakavkysten.no/knutstad-holen/">
+            <div class="footer2-socialsmak-div"><img class="footer2-socialsmak-img" src="/img/smakavkysten.png" alt=""
+                    srcset=""></img></div>
+        </a>
+        <a class="footer2-socialmail" href="mailto:kjetil@knutstad-holen.no">
+            <div class="footer2-socialmail-div"><img class="footer2-socialmail-img" src="/img/email.svg" alt=""
+                    srcset=""></img></div>
+        </a>
+        <p class="footer2-tel">Telefon:<br> 62 54 08 40</p>
+        <p class="footer2-adresse">Adresse: <br> Grønnegata 24, 2317 Hamar</p>
+        <p class="footer2-tid">Åpningstider: <br> Man-fre: 10-16 <br> Lør: 10-15</p>
+
+
+        <a href="mailto:Victor.h7@live.com"><i class="far fa-envelope"></i></a>
+
+    </footer>
+
+
+    <script src="/JS/navbar2.js"></script>
+</body>
+
 </html>

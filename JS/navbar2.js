@@ -39,7 +39,7 @@
 
 // let autoslide = setInterval(nextSlide, 4000);
 
-// Navbar
+//! Navbar 2
 const navbar2Icon = document.querySelector('.navbar2-icon');
 let navbar2 = document.querySelector('.navbar2');
 const navContent = document.getElementById('navContent');
