@@ -97,21 +97,24 @@
 
         <div class="kalkulator">
 
+            <form class="inputForm" id="inputForm">
             <div class="kalkulator-item">
 
                 <h1 class="kalkulator-item--title">Fiskefillet | 200g voksen | 100g barn |</h1>
 
                 <input class="kalkulator-item--input" type="number" name="Fiskefillet" id="inputFiskVoksen"
-                    placeholder="Voksen" autocomplete="off">
+                    placeholder="Voksen" autocomplete="off" min="1" step="1">
 
                 <p class="kalkulator-item--text">+</p>
 
                 <input class="kalkulator-item--input" type="number" name="Fiskefillet" id="inputFiskBarn"
-                    placeholder="Barn" autocomplete="off">
+                    placeholder="Barn" autocomplete="off" min="1" step="1">
+
+                    <button type="submit" class="kalkulator-item--btnFillet" id="btn">Kalkuler</button>
 
                 <p class="kalkulator-item--text">=</p>
 
-                <p class="kalkulator-item--value">Value</p>
+                <p class="kalkulator-item--valueFillet">Voksen: Barn:</p>
 
             </div>
 
@@ -119,17 +122,19 @@
 
                 <h1 class="kalkulator-item--title">Fisk i skiver | 300g voksen | 150g barn |</h1>
 
-                <input class="kalkulator-item--input" type="number" name="Fiskiskiver" id="inputFiskskiverVoksen"
-                    placeholder="Voksen" autocomplete="off">
+                <input class="kalkulator-item--input" type="number" name="Fiskiskiver" id="inputSkiverVoksen"
+                    placeholder="Voksen" autocomplete="off" min="1" step="1">
 
                 <p class="kalkulator-item--text">+</p>
 
-                <input class="kalkulator-item--input" type="number" name="Fiskiskiver" id="inputFiskskiverBarn"
-                    placeholder="Barn" autocomplete="off">
+                <input class="kalkulator-item--input" type="number" name="Fiskiskiver" id="inputSkiverBarn"
+                    placeholder="Barn" autocomplete="off" min="1" step="1">
+
+                    <button type="submit" class="kalkulator-item--btnSkiver" id="btn">Kalkuler</button>
 
                 <p class="kalkulator-item--text">=</p>
 
-                <p class="kalkulator-item--value">Value</p>
+                <p class="kalkulator-item--valueSkiver">Voksen: Barn:</p>
 
             </div>
 
@@ -138,16 +143,18 @@
                 <h1 class="kalkulator-item--title">Lever av skrei | 100g voksen | 50g barn |</h1>
 
                 <input class="kalkulator-item--input" type="number" name="Leveravskrei" id="inputLeverVoksen"
-                    placeholder="Voksen" autocomplete="off">
+                    placeholder="Voksen" autocomplete="off" min="1" step="1">
 
                 <p class="kalkulator-item--text">+</p>
 
                 <input class="kalkulator-item--input" type="number" name="Leveravskrei" id="inputLeverBarn"
-                    placeholder="Barn" autocomplete="off">
+                    placeholder="Barn" autocomplete="off" min="1" step="1">
+
+                <button type="submit" class="kalkulator-item--btnLever" id="btn">Kalkuler</button>
 
                 <p class="kalkulator-item--text">=</p>
 
-                <p class="kalkulator-item--value">Value</p>
+                <p class="kalkulator-item--valueLever">Voksen: Barn:</p>
 
             </div>
 
@@ -156,16 +163,18 @@
                 <h1 class="kalkulator-item--title">Rogn av skrei | 100g voksen | 50g barn |</h1>
 
                 <input class="kalkulator-item--input" type="number" name="Rognavskrei" id="inputRognVoksen"
-                    placeholder="Voksen" autocomplete="off">
+                    placeholder="Voksen" autocomplete="off" min="1" step="1">
 
                 <p class="kalkulator-item--text">+</p>
 
                 <input class="kalkulator-item--input" type="number" name="Rognavskrei" id="inputRognBarn"
-                    placeholder="Barn" autocomplete="off">
+                    placeholder="Barn" autocomplete="off" min="1" step="1">
+
+                    <button type="submit" class="kalkulator-item--btnRogn" id="btn">Kalkuler</button>
 
                 <p class="kalkulator-item--text">=</p>
 
-                <p class="kalkulator-item--value">Value</p>
+                <p class="kalkulator-item--valueRogn">Voksen: Barn:</p>
 
             </div>
 
@@ -174,16 +183,18 @@
                 <h1 class="kalkulator-item--title">Reker | 500g voksen | 250g barn |</h1>
 
                 <input class="kalkulator-item--input" type="number" name="reker" id="inputRekerVoksen"
-                    placeholder="Voksen" autocomplete="off">
+                    placeholder="Voksen" autocomplete="off" min="1" step="1">
 
                 <p class="kalkulator-item--text">+</p>
 
                 <input class="kalkulator-item--input" type="number" name="reker" id="inputRekerBarn" placeholder="Barn"
-                    autocomplete="off">
+                    autocomplete="off" min="1" step="1">
+
+                    <button type="submit" class="kalkulator-item--btnReker" id="btn">Kalkuler</button>
 
                 <p class="kalkulator-item--text">=</p>
 
-                <p class="kalkulator-item--value">Value</p>
+                <p class="kalkulator-item--valueReker">Voksen: Barn:</p>
 
             </div>
 
@@ -191,17 +202,19 @@
 
                 <h1 class="kalkulator-item--title">Blåskjell | 500g voksen | 250g barn |</h1>
 
-                <input class="kalkulator-item--input" type="number" name="blåskjell" id="inputBlaaskjellVoksen"
-                    placeholder="Voksen" autocomplete="off">
+                <input class="kalkulator-item--input" type="number" name="blåskjell" id="inputSkjellVoksen"
+                    placeholder="Voksen" autocomplete="off" min="1" step="1">
 
                 <p class="kalkulator-item--text">+</p>
 
-                <input class="kalkulator-item--input" type="number" name="blåskjell" id="inputBlaaskjellBarn"
-                    placeholder="Barn" autocomplete="off">
+                <input class="kalkulator-item--input" type="number" name="blåskjell" id="inputSkjellBarn"
+                    placeholder="Barn" autocomplete="off" min="1" step="1">
+
+                <button type="submit" class="kalkulator-item--btnSkjell" id="btn">Kalkuler</button>
 
                 <p class="kalkulator-item--text">=</p>
 
-                <p class="kalkulator-item--value">Value</p>
+                <p class="kalkulator-item--valueSkjell">Voksen: Barn:</p>
 
             </div>
 
@@ -210,16 +223,18 @@
                 <h1 class="kalkulator-item--title">Èn Krabbe | 500g voksen | 250g barn |</h1>
 
                 <input class="kalkulator-item--input" type="number" name="krabbe" id="inputKrabbeVoksen"
-                    placeholder="Voksen" autocomplete="off">
+                    placeholder="Voksen" autocomplete="off" min="1" step="1">
 
                 <p class="kalkulator-item--text">+</p>
 
                 <input class="kalkulator-item--input" type="number" name="krabbe" id="inputKrabbeBarn"
-                    placeholder="Barn" autocomplete="off">
+                    placeholder="Barn" autocomplete="off" min="1" step="1">
 
+                <button type="submit" class="kalkulator-item--btnKrabbe" id="btn">Kalkuler</button>
+                    
                 <p class="kalkulator-item--text">=</p>
 
-                <p class="kalkulator-item--value">Value</p>
+                <p class="kalkulator-item--valueKrabbe">Voksen: Barn:</p>
 
             </div>
 
@@ -228,19 +243,21 @@
                 <h1 class="kalkulator-item--title">Èn Hummer | 500g voksen | 250g barn |</h1>
 
                 <input class="kalkulator-item--input" type="number" name="Hummer" id="inputHummerVoksen"
-                    placeholder="Voksen" autocomplete="off">
+                    placeholder="Voksen" autocomplete="off" min="1" step="1">
 
                 <p class="kalkulator-item--text">+</p>
 
                 <input class="kalkulator-item--input" type="number" name="Hummer" id="inputHummerBarn"
-                    placeholder="Barn" autocomplete="off">
+                    placeholder="Barn" autocomplete="off" min="1" step="1">
+
+                    <button type="submit" class="kalkulator-item--btnHummer" id="btn">Kalkuler</button>
 
                 <p class="kalkulator-item--text">=</p>
 
-                <p class="kalkulator-item--value">Value</p>
+                <p class="kalkulator-item--valueHummer">Voksen: Barn:</p>
 
             </div>
-
+        </form>
 
         </div>
 
@@ -284,7 +301,7 @@
     </footer>
 
 
-    <script src="/JS/navbar2.js"></script>
+    <script src="/JS/mengdeKalk.js"></script>
 </body>
 
 </html>

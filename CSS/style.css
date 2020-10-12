@@ -2062,60 +2062,81 @@ body {
   height: 135vh; }
   @media screen and (max-width: 1600px) {
     .wrapperkalk {
-      height: 155vh; } }
+      height: 175vh; } }
   @media screen and (max-width: 1440px) {
     .wrapperkalk {
-      height: 155vh; } }
+      height: 175vh; } }
   @media screen and (max-width: 1344px) {
     .wrapperkalk {
-      height: 155vh; } }
+      height: 175vh; } }
   @media screen and (max-width: 1150px) {
     .wrapperkalk {
-      height: 155vh; } }
+      height: 175vh; } }
   @media screen and (max-width: 56.25em) {
     .wrapperkalk {
-      height: 180vh; } }
+      height: 750vh; } }
   @media screen and (max-width: 37.5em) {
     .wrapperkalk {
-      height: 170vh; } }
+      height: 750vh; } }
   @media screen and (max-width: 425px) {
     .wrapperkalk {
-      height: 190vh; } }
+      height: 730vh; } }
   @media screen and (max-width: 414px) {
     .wrapperkalk {
-      height: 190vh; } }
+      height: 730vh; } }
   @media screen and (max-width: 375px) {
     .wrapperkalk {
-      height: 190vh; } }
+      height: 730vh; } }
   .wrapperkalk .title {
     display: flex;
     flex-direction: column;
     padding: var(--big-padding);
     color: #fff; }
-    @media screen and (max-width: 37.5em) {
+    @media screen and (max-width: 425px) {
       .wrapperkalk .title {
-        text-align: center; } }
+        padding: 5rem 2.5rem; } }
     @media screen and (max-width: 375px) {
       .wrapperkalk .title {
         padding: 5rem 2.5rem; } }
     .wrapperkalk .title-produkter {
       font-size: var(--fs-text-big); }
+      @media screen and (max-width: 37.5em) {
+        .wrapperkalk .title-produkter {
+          text-align: left;
+          margin-left: 8rem; } }
       @media screen and (max-width: 425px) {
         .wrapperkalk .title-produkter {
-          text-align: left; } }
+          text-align: left;
+          margin-left: 0rem; } }
+      @media screen and (max-width: 375px) {
+        .wrapperkalk .title-produkter {
+          font-size: var(--fs-text); } }
     .wrapperkalk .title-kalk {
       font-size: var(--fs-heading-big);
       font-weight: 300;
       margin-left: 1rem; }
       .wrapperkalk .title-kalk--underline {
         border-bottom: var(--border-bottom-2); }
+      @media screen and (max-width: 37.5em) {
+        .wrapperkalk .title-kalk {
+          text-align: center;
+          font-size: var(--fs-heading-medium); } }
       @media screen and (max-width: 425px) {
         .wrapperkalk .title-kalk {
           font-size: var(--fs-heading-medium);
-          text-align: left;
-          font-weight: 300; } }
+          text-align: center;
+          font-weight: 300;
+          margin-left: 0rem; } }
+      @media screen and (max-width: 375px) {
+        .wrapperkalk .title-kalk {
+          font-size: var(--fs-heading); } }
   .wrapperkalk .kalkulator {
-    margin-left: 5rem; }
+    margin-left: 5rem;
+    margin-right: 5rem; }
+    @media screen and (max-width: 425px) {
+      .wrapperkalk .kalkulator {
+        margin-left: 2rem;
+        margin-right: 2rem; } }
     .wrapperkalk .kalkulator-item {
       display: flex;
       align-items: center;
@@ -2123,19 +2144,172 @@ body {
       padding-bottom: 5rem;
       color: #fff;
       border-bottom: var(--border-bottom-9); }
+      @media screen and (max-width: 56.25em) {
+        .wrapperkalk .kalkulator-item {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 150px 100px 50px 100px 50px 100px; } }
       .wrapperkalk .kalkulator-item--title {
         font-size: var(--fs-heading);
         font-weight: 300; }
       .wrapperkalk .kalkulator-item--text {
         font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--text {
+            margin-left: 12.5rem; } }
       .wrapperkalk .kalkulator-item--input {
         margin: 0rem 3rem;
         padding: 1rem 1rem;
         font-size: var(--fs-text-big);
         font-family: museo-sans-rounded, sans-serif; }
-      .wrapperkalk .kalkulator-item--value {
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--input {
+            margin: 0rem;
+            width: 30rem; } }
+      .wrapperkalk .kalkulator-item--valueFillet {
         margin-left: 2.5rem;
         font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--valueFillet {
+            margin-left: 10rem; } }
+      .wrapperkalk .kalkulator-item--btnFillet {
+        margin-right: 2.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        color: #fff;
+        background-color: var(--coral2);
+        font-size: var(--fs-text-big);
+        cursor: pointer;
+        font-family: museo-sans-rounded, sans-serif;
+        transition: all .2s; }
+      .wrapperkalk .kalkulator-item--btnFillet:hover {
+        background-color: #bb503b; }
+      .wrapperkalk .kalkulator-item--valueSkiver {
+        margin-left: 2.5rem;
+        font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--valueSkiver {
+            margin-left: 10rem; } }
+      .wrapperkalk .kalkulator-item--btnSkiver {
+        margin-right: 2.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        color: #fff;
+        background-color: var(--coral2);
+        font-size: var(--fs-text-big);
+        cursor: pointer;
+        font-family: museo-sans-rounded, sans-serif;
+        transition: all .2s; }
+      .wrapperkalk .kalkulator-item--btnSkiver:hover {
+        background-color: #bb503b; }
+      .wrapperkalk .kalkulator-item--valueLever {
+        margin-left: 2.5rem;
+        font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--valueLever {
+            margin-left: 10rem; } }
+      .wrapperkalk .kalkulator-item--btnLever {
+        margin-right: 2.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        color: #fff;
+        background-color: var(--coral2);
+        font-size: var(--fs-text-big);
+        cursor: pointer;
+        font-family: museo-sans-rounded, sans-serif;
+        transition: all .2s; }
+      .wrapperkalk .kalkulator-item--btnLever:hover {
+        background-color: #bb503b; }
+      .wrapperkalk .kalkulator-item--valueRogn {
+        margin-left: 2.5rem;
+        font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--valueRogn {
+            margin-left: 10rem; } }
+      .wrapperkalk .kalkulator-item--btnRogn {
+        margin-right: 2.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        color: #fff;
+        background-color: var(--coral2);
+        font-size: var(--fs-text-big);
+        cursor: pointer;
+        font-family: museo-sans-rounded, sans-serif;
+        transition: all .2s; }
+      .wrapperkalk .kalkulator-item--btnRogn:hover {
+        background-color: #bb503b; }
+      .wrapperkalk .kalkulator-item--valueReker {
+        margin-left: 2.5rem;
+        font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--valueReker {
+            margin-left: 10rem; } }
+      .wrapperkalk .kalkulator-item--btnReker {
+        margin-right: 2.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        color: #fff;
+        background-color: var(--coral2);
+        font-size: var(--fs-text-big);
+        cursor: pointer;
+        font-family: museo-sans-rounded, sans-serif;
+        transition: all .2s; }
+      .wrapperkalk .kalkulator-item--btnReker:hover {
+        background-color: #bb503b; }
+      .wrapperkalk .kalkulator-item--valueSkjell {
+        margin-left: 2.5rem;
+        font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--valueSkjell {
+            margin-left: 10rem; } }
+      .wrapperkalk .kalkulator-item--btnSkjell {
+        margin-right: 2.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        color: #fff;
+        background-color: var(--coral2);
+        font-size: var(--fs-text-big);
+        cursor: pointer;
+        font-family: museo-sans-rounded, sans-serif;
+        transition: all .2s; }
+      .wrapperkalk .kalkulator-item--btnSkjell:hover {
+        background-color: #bb503b; }
+      .wrapperkalk .kalkulator-item--valueKrabbe {
+        margin-left: 2.5rem;
+        font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--valueKrabbe {
+            margin-left: 10rem; } }
+      .wrapperkalk .kalkulator-item--btnKrabbe {
+        margin-right: 2.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        color: #fff;
+        background-color: var(--coral2);
+        font-size: var(--fs-text-big);
+        cursor: pointer;
+        font-family: museo-sans-rounded, sans-serif;
+        transition: all .2s; }
+      .wrapperkalk .kalkulator-item--btnKrabbe:hover {
+        background-color: #bb503b; }
+      .wrapperkalk .kalkulator-item--valueHummer {
+        margin-left: 2.5rem;
+        font-size: var(--fs-heading); }
+        @media screen and (max-width: 56.25em) {
+          .wrapperkalk .kalkulator-item--valueHummer {
+            margin-left: 10rem; } }
+      .wrapperkalk .kalkulator-item--btnHummer {
+        margin-right: 2.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        color: #fff;
+        background-color: var(--coral2);
+        font-size: var(--fs-text-big);
+        cursor: pointer;
+        font-family: museo-sans-rounded, sans-serif;
+        transition: all .2s; }
+      .wrapperkalk .kalkulator-item--btnHummer:hover {
+        background-color: #bb503b; }
   .wrapperkalk .smakenavhavet {
     margin-top: 10rem;
     margin-left: 5rem; }
@@ -2726,4 +2900,320 @@ body {
         border-bottom: var(--border-bottom-8); }
       @media screen and (max-width: 425px) {
         .wrapperkvalitet .smakenavhavet-text {
+          font-size: 3rem; } }
+
+.wrapperfinnoss {
+  background-color: var(--winered-dark);
+  height: 130vh; }
+  @media screen and (max-width: 1600px) {
+    .wrapperfinnoss {
+      height: 160vh; } }
+  @media screen and (max-width: 1440px) {
+    .wrapperfinnoss {
+      height: 160vh; } }
+  @media screen and (max-width: 1344px) {
+    .wrapperfinnoss {
+      height: 160vh; } }
+  @media screen and (max-width: 1150px) {
+    .wrapperfinnoss {
+      height: 160vh; } }
+  @media screen and (max-width: 56.25em) {
+    .wrapperfinnoss {
+      height: 155vh; } }
+  @media screen and (max-width: 37.5em) {
+    .wrapperfinnoss {
+      height: 150vh; } }
+  @media screen and (max-width: 425px) {
+    .wrapperfinnoss {
+      height: 150vh; } }
+  @media screen and (max-width: 414px) {
+    .wrapperfinnoss {
+      height: 150vh; } }
+  @media screen and (max-width: 375px) {
+    .wrapperfinnoss {
+      height: 150vh; } }
+  .wrapperfinnoss .title {
+    display: flex;
+    flex-direction: column;
+    padding: var(--big-padding);
+    color: #fff; }
+    @media screen and (max-width: 37.5em) {
+      .wrapperfinnoss .title {
+        text-align: center; } }
+    @media screen and (max-width: 375px) {
+      .wrapperfinnoss .title {
+        padding: 5rem 2.5rem; } }
+    .wrapperfinnoss .title-kontakt {
+      font-size: var(--fs-text-big); }
+      @media screen and (max-width: 425px) {
+        .wrapperfinnoss .title-kontakt {
+          text-align: left; } }
+    .wrapperfinnoss .title-finn {
+      font-size: var(--fs-heading-big);
+      font-weight: 300;
+      margin-left: 1rem; }
+      .wrapperfinnoss .title-finn--underline {
+        border-bottom: var(--border-bottom-3); }
+      @media screen and (max-width: 425px) {
+        .wrapperfinnoss .title-finn {
+          font-size: var(--fs-heading-medium);
+          text-align: left;
+          font-weight: 300; } }
+  .wrapperfinnoss .text {
+    color: #fff;
+    font-size: var(--fs-title);
+    font-weight: 100;
+    padding: var(--title-padding); }
+    @media screen and (max-width: 37.5em) {
+      .wrapperfinnoss .text {
+        text-align: center; } }
+    @media screen and (max-width: 425px) {
+      .wrapperfinnoss .text {
+        text-align: left; } }
+    @media screen and (max-width: 375px) {
+      .wrapperfinnoss .text {
+        padding: 5rem 2.5rem; } }
+  .wrapperfinnoss .map {
+    margin-top: 10rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-self: center;
+    justify-self: center; }
+    .wrapperfinnoss .map--kart {
+      width: 100rem;
+      height: 80rem; }
+      @media screen and (max-width: 56.25em) {
+        .wrapperfinnoss .map--kart {
+          height: 45rem;
+          width: 60rem; } }
+      @media screen and (max-width: 425px) {
+        .wrapperfinnoss .map--kart {
+          height: 30rem;
+          width: 42.5rem;
+          margin-left: 0rem; } }
+      @media screen and (max-width: 414px) {
+        .wrapperfinnoss .map--kart {
+          height: 30rem;
+          width: 41.5rem;
+          margin-left: 0rem; } }
+      @media screen and (max-width: 375px) {
+        .wrapperfinnoss .map--kart {
+          height: 30rem;
+          width: 37.5rem;
+          margin-left: 0rem; } }
+    @media screen and (max-width: 1600px) {
+      .wrapperfinnoss .map {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr; } }
+    @media screen and (max-width: 37.5em) {
+      .wrapperfinnoss .map {
+        margin-left: 0rem; } }
+    @media screen and (max-width: 425px) {
+      .wrapperfinnoss .map {
+        margin-left: 0rem; } }
+  .wrapperfinnoss .smakenavhavet {
+    margin-top: 10rem;
+    margin-left: 5rem; }
+    @media screen and (max-width: 1600px) {
+      .wrapperfinnoss .smakenavhavet {
+        margin-top: 7.5rem; } }
+    @media screen and (max-width: 37.5em) {
+      .wrapperfinnoss .smakenavhavet {
+        text-align: center;
+        margin-left: 0; } }
+    .wrapperfinnoss .smakenavhavet-text {
+      font-size: var(--fs-heading-medium);
+      color: #fff;
+      font-weight: 300;
+      font-style: italic; }
+      .wrapperfinnoss .smakenavhavet-text--underline {
+        border-bottom: var(--border-bottom-3); }
+      @media screen and (max-width: 425px) {
+        .wrapperfinnoss .smakenavhavet-text {
+          font-size: 3rem; } }
+
+.wrapperskjema {
+  background-color: var(--winered-dark);
+  height: 122.5vh; }
+  @media screen and (max-width: 1600px) {
+    .wrapperskjema {
+      height: 150vh; } }
+  @media screen and (max-width: 1440px) {
+    .wrapperskjema {
+      height: 150vh; } }
+  @media screen and (max-width: 1344px) {
+    .wrapperskjema {
+      height: 150vh; } }
+  @media screen and (max-width: 1150px) {
+    .wrapperskjema {
+      height: 150vh; } }
+  @media screen and (max-width: 56.25em) {
+    .wrapperskjema {
+      height: 165vh; } }
+  @media screen and (max-width: 37.5em) {
+    .wrapperskjema {
+      height: 167.5vh; } }
+  @media screen and (max-width: 425px) {
+    .wrapperskjema {
+      height: 167.5vh; } }
+  @media screen and (max-width: 414px) {
+    .wrapperskjema {
+      height: 175vh; } }
+  @media screen and (max-width: 375px) {
+    .wrapperskjema {
+      height: 160vh; } }
+  .wrapperskjema .title {
+    display: flex;
+    flex-direction: column;
+    padding: var(--big-padding);
+    color: #fff; }
+    @media screen and (max-width: 37.5em) {
+      .wrapperskjema .title {
+        text-align: center; } }
+    @media screen and (max-width: 375px) {
+      .wrapperskjema .title {
+        padding: 5rem 2.5rem; } }
+    .wrapperskjema .title-kontakt {
+      font-size: var(--fs-text-big); }
+      @media screen and (max-width: 425px) {
+        .wrapperskjema .title-kontakt {
+          text-align: left; } }
+    .wrapperskjema .title-skjema {
+      font-size: var(--fs-heading-big);
+      font-weight: 300;
+      margin-left: 1rem; }
+      .wrapperskjema .title-skjema--underline {
+        border-bottom: var(--border-bottom-3); }
+      @media screen and (max-width: 425px) {
+        .wrapperskjema .title-skjema {
+          font-size: var(--fs-heading-medium);
+          text-align: left;
+          font-weight: 300; } }
+  .wrapperskjema .text {
+    color: #fff;
+    font-size: var(--fs-title);
+    font-weight: 100;
+    padding: var(--title-padding); }
+    @media screen and (max-width: 37.5em) {
+      .wrapperskjema .text {
+        text-align: center; } }
+    @media screen and (max-width: 425px) {
+      .wrapperskjema .text {
+        text-align: left; } }
+    @media screen and (max-width: 375px) {
+      .wrapperskjema .text {
+        padding: 5rem 2.5rem; } }
+  .wrapperskjema .inputswrapper {
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 280px 100px; }
+    @media screen and (max-width: 56.25em) {
+      .wrapperskjema .inputswrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 280px 100px; } }
+    @media screen and (max-width: 375px) {
+      .wrapperskjema .inputswrapper {
+        margin-left: 2.5rem; } }
+    .wrapperskjema .inputswrapper-navn {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1; }
+      .wrapperskjema .inputswrapper-navn--title {
+        font-size: var(--fs-heading);
+        color: #fff;
+        margin-bottom: 1rem; }
+      .wrapperskjema .inputswrapper-navn--inputs {
+        padding: 1rem 1rem;
+        font-size: var(--fs-text-big);
+        font-family: museo-sans-rounded, sans-serif; }
+        @media screen and (max-width: 56.25em) {
+          .wrapperskjema .inputswrapper-navn--inputs {
+            margin: 0rem;
+            width: 30rem; } }
+    .wrapperskjema .inputswrapper-epost {
+      grid-column: 1 / 1;
+      grid-row: 2 / 2; }
+      .wrapperskjema .inputswrapper-epost--title {
+        font-size: var(--fs-heading);
+        color: #fff;
+        margin-bottom: 1rem; }
+      .wrapperskjema .inputswrapper-epost--inputs {
+        padding: 1rem 1rem;
+        font-size: var(--fs-text-big);
+        font-family: museo-sans-rounded, sans-serif; }
+        @media screen and (max-width: 56.25em) {
+          .wrapperskjema .inputswrapper-epost--inputs {
+            margin: 0rem;
+            width: 30rem; } }
+    .wrapperskjema .inputswrapper-nummer {
+      grid-column: 1 / 1;
+      grid-row: 3 / 3; }
+      .wrapperskjema .inputswrapper-nummer--title {
+        font-size: var(--fs-heading);
+        color: #fff;
+        margin-bottom: 1rem; }
+      .wrapperskjema .inputswrapper-nummer--inputs {
+        padding: 1rem 1rem;
+        font-size: var(--fs-text-big);
+        font-family: museo-sans-rounded, sans-serif; }
+        @media screen and (max-width: 56.25em) {
+          .wrapperskjema .inputswrapper-nummer--inputs {
+            margin: 0rem;
+            width: 30rem; } }
+    .wrapperskjema .inputswrapper-melding {
+      grid-column: 1 / 1;
+      grid-row: 4 / 4; }
+      .wrapperskjema .inputswrapper-melding--title {
+        font-size: var(--fs-heading);
+        color: #fff;
+        margin-bottom: 1rem; }
+      .wrapperskjema .inputswrapper-melding--inputs {
+        padding: 1rem 1rem;
+        font-size: var(--fs-text-big);
+        font-family: museo-sans-rounded, sans-serif; }
+        @media screen and (max-width: 56.25em) {
+          .wrapperskjema .inputswrapper-melding--inputs {
+            margin: 0rem;
+            width: 30rem; } }
+    .wrapperskjema .inputswrapper-button {
+      grid-column: 1 / 1;
+      grid-row: 5 / 5;
+      width: 20rem;
+      height: 5rem;
+      color: #fff;
+      background-color: var(--darkblue1);
+      border: none;
+      border-radius: .3rem;
+      align-self: center;
+      transition: all .2s; }
+      @media screen and (max-width: 56.25em) {
+        .wrapperskjema .inputswrapper-button {
+          margin-top: 5rem; } }
+    .wrapperskjema .inputswrapper-button:hover {
+      transform: translateY(-1rem);
+      background-color: var(--darkblue2);
+      cursor: pointer;
+      box-shadow: var(--shadow-light-4); }
+  .wrapperskjema .smakenavhavet {
+    margin-top: 10rem;
+    margin-left: 5rem; }
+    @media screen and (max-width: 1600px) {
+      .wrapperskjema .smakenavhavet {
+        margin-top: 7.5rem; } }
+    @media screen and (max-width: 37.5em) {
+      .wrapperskjema .smakenavhavet {
+        text-align: center;
+        margin-left: 0; } }
+    .wrapperskjema .smakenavhavet-text {
+      font-size: var(--fs-heading-medium);
+      color: #fff;
+      font-weight: 300;
+      font-style: italic; }
+      .wrapperskjema .smakenavhavet-text--underline {
+        border-bottom: var(--border-bottom-3); }
+      @media screen and (max-width: 425px) {
+        .wrapperskjema .smakenavhavet-text {
           font-size: 3rem; } }

@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Knutstad & Holen | Kontakt oss | Finn oss</title>
+    <title>Knutstad & Holen | Kontakt oss | Kontakt-skjema</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/CSS/style.css">
@@ -85,30 +85,59 @@
 
     </div>
 
-    <div class="wrapperfinnoss">
+    <div class="wrapperskjema">
 
         <div class="title">
 
             <p class="title-kontakt">- Kontakt oss</p>
             <br>
-            <h1 class="title-finn"><span class="title-finn--underline">Finn oss</span></h1>
+            <h1 class="title-skjema"><span class="title-skjema--underline">Kontakt-skjema</span></h1>
 
         </div>
 
         <div class="text">
 
-            <p class="text-finnoss">Du finner oss i vår butikk på Grønnegata 24, 2317 Hamar </p>
+            <p class="text-finnoss">Er det noe du lurer på? Bare fyll ut kontakt-skjemaet nederfor.</p>
 
         </div>
 
 
-        <div class="map">
+        <div class="inputswrapper">
 
-            <iframe class="map--kart"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7787.579802323881!2d11.076404!3d60.793032!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3512764c82ebf68!2sKnutstad%20%26%20Holen%20AS!5e0!3m2!1sno!2sno!4v1602335428886!5m2!1sno!2sno"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+            <div class="inputswrapper-navn">
 
+                <p class="inputswrapper-navn--title">Navn:</p>
+                <input type="text" name="name" placeholder="Navn:" id="inputName" class="inputswrapper-navn--inputs"
+                    required>
+
+            </div>
+
+            <div class="inputswrapper-epost">
+
+                <p class="inputswrapper-epost--title">Epost:</p>
+                <input type="email" name="email" placeholder="Epost:" id="inputEmail"
+                    class="inputswrapper-epost--inputs" required>
+
+            </div>
+
+            <div class="inputswrapper-nummer">
+
+                <p class="inputswrapper-nummer--title">Telefon-nummer:</p>
+                <input type="text" name="mobile" placeholder="Telefon-nummer:" id="inputMobile"
+                    class="inputswrapper-nummer--inputs" required>
+
+            </div>
+
+            <div class="inputswrapper-melding">
+
+                <p class="inputswrapper-melding--title">Din melding:</p>
+
+                <textarea name="message" id="inputMessage" class="inputswrapper-nummer--inputs" cols="30" rows="10"
+                    placeholder="Din melding:" required></textarea>
+
+            </div>
+
+            <button type="submit" class="inputswrapper-button">Send:</button>
         </div>
 
         <div class="smakenavhavet">
