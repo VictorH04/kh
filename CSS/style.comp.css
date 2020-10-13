@@ -755,7 +755,7 @@ body {
     grid-template-areas: "top" "bottom";
     justify-items: center;
     background-attachment: fixed;
-    background-image: url(/kh/img/background-landing.jpg);
+    background-image: url(/img/background-landing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; }
@@ -774,7 +774,7 @@ body {
     margin-top: 5rem;
     height: 60vh;
     width: 60vw;
-    background: url("/kh/img/bcg-0.jpg");
+    background: url("/img/bcg-0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -831,7 +831,11 @@ body {
   @media screen and (max-width: 425px) {
     .folgmed-fb-feed {
       margin-left: 0;
-      width: 10rem; } }
+      width: 40rem; } }
+  @media screen and (max-width: 425px) {
+    .folgmed-fb-feed {
+      margin-left: 0;
+      width: 35rem; } }
   .folgmed-instafeed {
     display: flex;
     flex-direction: row;
