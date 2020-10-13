@@ -827,11 +827,11 @@ body {
         text-align: center; } }
   @media screen and (max-width: 56.25em) {
     .folgmed-fb-feed {
-      justify-self: center; } }
+      justify-self: center;
+      width: 35rem; } }
   @media screen and (max-width: 425px) {
     .folgmed-fb-feed {
-      margin-left: 0;
-      width: 10rem; } }
+      margin-left: 0; } }
   .folgmed-instafeed {
     display: flex;
     flex-direction: row;
@@ -883,7 +883,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
-  grid-gap: 3rem;
+  grid-gap: 1rem;
   background-color: var(--lightblue2); }
   @media screen and (max-width: 56.25em) {
     .footer {
@@ -1141,7 +1141,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
-  grid-gap: 3rem;
+  grid-gap: 1rem;
   background-color: var(--coral2); }
   @media screen and (max-width: 56.25em) {
     .footer2 {
@@ -1399,7 +1399,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
-  grid-gap: 3rem;
+  grid-gap: 1rem;
   background-color: var(--lightblue2); }
   @media screen and (max-width: 56.25em) {
     .footer3 {
@@ -1819,7 +1819,7 @@ body {
       height: 230vh; } }
   @media screen and (max-width: 37.5em) {
     .wrapperdelikatesser {
-      height: 230vh; } }
+      height: 215vh; } }
   @media screen and (max-width: 425px) {
     .wrapperdelikatesser {
       height: 230vh; } }

@@ -1142,11 +1142,11 @@
 	&-fb-feed {
 		@media screen and (max-width: $bp-medium) {
 			justify-self: center;
+			width: 35rem;
 		}
 
 		@media screen and (max-width: 425px) {
 			margin-left: 0;
-			width: 10rem;
 		}
 		
 	}
@@ -1217,7 +1217,7 @@
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: 1fr;
-	grid-gap: 3rem;
+	grid-gap: 1rem;
 
 	background-color: var(--lightblue2);
 
@@ -1566,7 +1566,7 @@
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: 1fr;
-	grid-gap: 3rem;
+	grid-gap: 1rem;
 
 	background-color: var(--coral2);
 
@@ -1915,7 +1915,7 @@
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: 1fr;
-	grid-gap: 3rem;
+	grid-gap: 1rem;
 
 	background-color: var(--lightblue2);
 
@@ -2491,7 +2491,7 @@
 	}
 
 	@media screen and (max-width: $bp-small) {
-		height: 230vh;
+		height: 215vh;
 	}
 
 	@media screen and (max-width: 425px) {
