@@ -1056,6 +1056,7 @@
 				height: 10rem;
 			}
 		}
+
 	}
 
 	&-slideshow {
@@ -1085,6 +1086,30 @@
 			align-self: center;
 			justify-self: end;
 		}
+
+		@media screen and (max-width: 1150px) {
+			width: 80vw;
+		}
+
+		@media screen and (max-width: $bp-medium) {
+			width: 80vw;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			width: 100vw;
+		}
+	
+		@media screen and (max-width: 425px) {
+			width: 100vw;
+		}
+	
+		@media screen and (max-width: 414px) {
+			width: 100vw;
+		}
+	
+		@media screen and (max-width: 375px) {
+			width: 100vw;
+		}
 	}
 }
 
@@ -1094,6 +1119,10 @@
 
 	@media screen and (max-width: $bp-medium) {
 		height: 200vh;
+	}
+
+	@media screen and (max-width: 375px) {
+		height: 220vh;
 	}
 
 	&-title {
@@ -1114,6 +1143,16 @@
 		@media screen and (max-width: $bp-medium) {
 			justify-self: center;
 		}
+
+		@media screen and (max-width: 425px) {
+			margin-left: 0;
+			width: 40rem;
+		}
+		
+		@media screen and (max-width: 425px) {
+			margin-left: 0;
+			width: 35rem;
+		}
 	}
 
 	&-instafeed {
@@ -1123,7 +1162,7 @@
 		justify-self: center;
 
 		@media screen and (max-width: $bp-medium) {
-			margin-left: 5rem;
+			// margin-left: 5rem;
 			justify-self: center;
 		}
 	}
@@ -1139,6 +1178,8 @@
 			grid-template-columns: 1fr;
 			grid-template-rows: repeat(2, 1fr);
 		}
+
+		
 	}
 }
 
@@ -1170,6 +1211,10 @@
 
 .fb-page {
 	margin-left: 5rem;
+	
+	@media screen and (max-width: $bp-medium) {
+		margin-left: 0rem;
+	}
 }
 
 .footer {
@@ -1178,9 +1223,17 @@
 	grid-template-rows: 1fr;
 	grid-gap: 3rem;
 
-	background-color: var(--darkblue1);
+	background-color: var(--lightblue2);
 
 	@media screen and (max-width: $bp-medium) {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+
+		width: 100vw;
+	}
+
+	@media screen and (max-width: 1600px) {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(2, 1fr);
@@ -1203,6 +1256,20 @@
 			grid-row: 1 / 1;
 			align-self: start;
 		}
+
+		@media screen and (max-width: 1600px) {
+			grid-column: 1 / 1;
+			grid-row: 1 / 1;
+			align-self: start;
+		}
+
+		@media screen and (max-width: 425px) {
+			grid-column: 1 / 1;
+			grid-row: 1 / 1;
+			align-self: start;
+			height: 6rem;
+			width: 6rem;
+		}
 	}
 
 	&-social {
@@ -1217,9 +1284,25 @@
 			grid-row: 2 / 2;
 		}
 
+		@media screen and (max-width: 1600px) {
+			justify-self: start;
+			margin-left: 1rem;
+
+			grid-column: 1 / 1;
+			grid-row: 2 / 2;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			justify-self: center;
+		}
+
 		&-img {
 			fill: #fff;
 			height: 4rem;
+
+			@media screen and (max-width: 425px) {
+				height: 4rem;
+			}
 		}
 
 		&-div {
@@ -1232,6 +1315,11 @@
 			justify-content: center;
 			align-items: center;
 			transition: all .2s;
+
+			@media screen and (max-width: 425px) {
+				height: 6rem;
+				width: 6rem;
+			}
 		}
 
 		&-div:hover {
@@ -1252,9 +1340,23 @@
 			grid-row: 2 / 2;
 		}
 
+		@media screen and (max-width: 1600px) {
+			justify-self: start;
+			grid-column: 2 / 2;
+			grid-row: 2 / 2;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			justify-self: center;
+		}
+
 		&-img {
 			fill: #fff;
 			height: 4rem;
+
+			@media screen and (max-width: 425px) {
+				height: 4rem;
+			}
 		}
 
 		&-div {
@@ -1267,6 +1369,11 @@
 			justify-content: center;
 			align-items: center;
 			transition: all .2s;
+
+			@media screen and (max-width: 425px) {
+				height: 6rem;
+				width: 6rem;
+			}
 		}
 
 		&-div:hover {
@@ -1287,9 +1394,23 @@
 			grid-row: 2 / 2;
 		}
 
+		@media screen and (max-width: 1600px) {
+			justify-self: start;
+			grid-column: 3 / 3;
+			grid-row: 2 / 2;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			justify-self: center;
+		}
+
 		&-img {
 			fill: #fff;
-			height: 6rem;
+			height: 4rem;
+
+			@media screen and (max-width: 425px) {
+				height: 4rem;
+			}
 		}
 
 		&-div {
@@ -1302,6 +1423,11 @@
 			justify-content: center;
 			align-items: center;
 			transition: all .2s;
+
+			@media screen and (max-width: 425px) {
+				height: 6rem;
+				width: 6rem;
+			}
 		}
 
 		&-div:hover {
@@ -1322,9 +1448,23 @@
 			grid-row: 2 / 2;
 		}
 
+		@media screen and (max-width: 1600px) {
+			justify-self: start;
+			grid-column: 4 / 4;
+			grid-row: 2 / 2;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			justify-self: center;
+		}
+
 		&-img {
 			fill: #fff;
 			height: 4rem;
+
+			@media screen and (max-width: 425px) {
+				height: 4rem;
+			}
 		}
 
 		&-div {
@@ -1337,6 +1477,11 @@
 			justify-content: center;
 			align-items: center;
 			transition: all .2s;
+
+			@media screen and (max-width: 425px) {
+				height: 6rem;
+				width: 6rem;
+			}
 		}
 
 		&-div:hover {
@@ -1350,10 +1495,24 @@
 		grid-row: 1 / 1;
 
 		font-size: var(--fs-text);
-		color: #fff;
+		color: #000;
 
 		align-self: center;
 		justify-self: center;
+
+		@media screen and (max-width: 1600px) {
+			justify-self: center;
+			grid-column: 2 / 2;
+			grid-row: 1 / 1;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			justify-self: center;
+		}
+
+		@media screen and (max-width: 425px) {
+			font-size: 1.25rem;
+		}
 	}
 
 	&-adresse {
@@ -1361,10 +1520,49 @@
 		grid-row: 1 / 1;
 
 		font-size: var(--fs-text);
-		color: #fff;
+		color: #000;
 
 		align-self: center;
 		justify-self: center;
+
+		@media screen and (max-width: 1600px) {
+			justify-self: center;
+			grid-column: 3 / 3;
+			grid-row: 1 / 1;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			justify-self: center;
+		}
+
+		@media screen and (max-width: 425px) {
+			font-size: 1.25rem;
+		}
+	}
+
+	&-tid {
+		grid-column: 5 / 5;
+		grid-row: 1 / 1;
+
+		font-size: var(--fs-text);
+		color: #000;
+
+		align-self: center;
+		justify-self: center;
+
+		@media screen and (max-width: 1600px) {
+			justify-self: center;
+			grid-column: 4 / 4;
+			grid-row: 1 / 1;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			justify-self: center;
+		}
+
+		@media screen and (max-width: 425px) {
+			font-size: 1.25rem;
+		}
 	}
 }
 
@@ -1374,7 +1572,7 @@
 	grid-template-rows: 1fr;
 	grid-gap: 3rem;
 
-	background-color: var(--coral2);
+	background-color: var(--lightblue2);
 
 	@media screen and (max-width: $bp-medium) {
 		display: grid;
