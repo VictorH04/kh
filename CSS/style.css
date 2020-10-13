@@ -1146,7 +1146,7 @@ body {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 3rem;
-  background-color: var(--lightblue2); }
+  background-color: var(--coral2); }
   @media screen and (max-width: 56.25em) {
     .footer2 {
       display: grid;
